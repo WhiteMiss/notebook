@@ -5,7 +5,9 @@ import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
-const routes = [
+const
+
+    routes = [
   {
     path: '/',
     name: 'login',
@@ -46,6 +48,7 @@ const routes = [
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
+  linkAtiveClass:'active',
   routes
 })
 

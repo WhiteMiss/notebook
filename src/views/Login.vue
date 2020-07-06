@@ -38,7 +38,14 @@
         components: {Info},
         methods: {
             login(){
-                this.$router.push('/home/list')
+                if(localStorage.getItem("name") == this.name && localStorage.getItem("password") == this.password){
+                    this.name = ''
+                    this.password= ''
+                    this.$router.push('/home/list')
+                }else{
+                    alert("用户或者密码不正确")
+                }
+
             },
             reg(){
                 this.isReg = true
@@ -50,6 +57,9 @@
                 if(this.password === this.repeat){
                     localStorage.setItem("name",this.name)
                     localStorage.setItem("password",this.password)
+                    this.name = ''
+                    this.password = ''
+                    this.isReg = false
                 }
                  else{
                      alert('输入密码不一致')
