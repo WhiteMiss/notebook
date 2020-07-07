@@ -31,8 +31,12 @@
     text-align: center;
     border-top: 1px solid deepskyblue;
     a{
-        color: deepskyblue;
+        color: cadetblue;
         display: block;
+        &.router-link-active{
+            color:#fff;
+            background:cadetblue;
+        }
     }
 }
 </style>

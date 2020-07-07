@@ -11,6 +11,6 @@
 <style lang="scss">
 *{
     padding: 0;
-    margin:  0;
+    margin: 0;
 }
 </style>
