@@ -10,6 +10,9 @@ export default new Vuex.Store({
   mutations: {
     addItem (state, value) {
       state.lists.push(value)
+    },
+    setIndex(state,value){
+      state.index = value
     }
   },
   actions: {
